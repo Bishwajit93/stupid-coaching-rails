@@ -1,0 +1,13 @@
+<div class="contianer">
+  <h1>Welcome to the Stupid coaching !!!!</h1>
+  <p>
+    <% if @question.blank? %>
+      <p><%= "Mutlala you did not say anything!!! lol!!! "%></p>
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <p><%= @answer %></p>
+</div>
+
+<%= link_to "Got another question?", ask_path %>
